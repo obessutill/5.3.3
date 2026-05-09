@@ -1,4 +1,3 @@
-import type { Vacancy, VacanciesResponse } from "../types/vacancy";
 import { mockVacancies } from "../mocks/vacancies";
 
 interface GetVacanciesParams {

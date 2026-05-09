@@ -1,8 +1,12 @@
-import { Container, Group, Text, UnstyledButton } from "@mantine/core";
+import { Container, Group, Text } from "@mantine/core";
+import { useMatch } from "react-router-dom";
 import hhIcon from '../assets/hh.svg';
 import userIcon from '../assets/user-circle.svg';
+import { CustomLink } from "./CustomLink";
 
 export const Header = () => {
+    const aboutMatch = useMatch('/about')
+
     return (
         <header
         style={{backgroundColor: '#ffffff',
@@ -33,20 +37,21 @@ export const Header = () => {
                     transform: 'translateX(-50%)',
                 }}
                 >
-                    <UnstyledButton>
-                        <Text size="xs" fw={600} c="#0F0F10">
-                            Вакансии FE
-                        </Text>
-                    </UnstyledButton>
+                    <CustomLink to='/vacancies/moscow'>Вакансии FE</CustomLink>
 
-                    <UnstyledButton>
+                    <CustomLink to='/about'>
                         <Group gap={6}>
-                            <img src={userIcon} alt="Пользователь" width={14} height={14} />
-                            <Text size="xs" c="rgba(15, 15, 16, 0.5)">
-                                Обо мне
-                            </Text>
+                            <img src={userIcon} 
+                            alt="Пользователь"
+                            width={14}
+                            height={14}
+                            style={{
+                                opacity: aboutMatch ? 1 : 0.5,
+                            }} 
+                            />
+                            <span>Обо мне</span>
                         </Group>
-                    </UnstyledButton>
+                    </CustomLink>
                 </Group>
             </Container>
         </header>

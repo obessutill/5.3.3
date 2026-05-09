@@ -6,6 +6,7 @@ import { VacanciesPage } from "./pages/VacanciesPage";
 import { VacancyDetailsPage } from "./pages/VacancyDetailsPage";
 import { MoscowVacanciesPage } from './pages/MoscowVacanciesPage';
 import { PetersburgVacanciesPage } from './pages/PetersburgVacanciesPage';
+import { AboutPage } from "./pages/AboutPage";
 import { moscowVacanciesLoader, petersburgVacanciesLoader, vacancyDetailsLoader } from "./loaders/vacanciesLoader";
 
 export const router = createBrowserRouter([
@@ -46,6 +47,10 @@ export const router = createBrowserRouter([
                         element: <VacancyDetailsPage />,
                     }
                 ]
+            },
+            {
+                path: 'about',
+                element: <AboutPage />,
             }
         ]
     }

@@ -1,7 +1,6 @@
 import { Group, Pagination, Stack, Text } from "@mantine/core";
 import { useSearchParams } from "react-router-dom";
 import { VacancyCard } from "./VacancyCard";
-import type { VacanciesResponse } from "../types/vacancy";
 
 interface VacancyListProps {
     data: VacanciesResponse

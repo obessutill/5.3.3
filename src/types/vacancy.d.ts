@@ -1,4 +1,4 @@
-export interface Vacancy {
+interface Vacancy {
     id: string,
     name: string,
     url?: string,
@@ -38,7 +38,7 @@ export interface Vacancy {
     description?: string,
 }
 
-export interface VacanciesResponse {
+interface VacanciesResponse {
     items: Vacancy[],
     found: number,
     page: number,

@@ -1,4 +1,3 @@
-import type { Vacancy } from "../types/vacancy";
 
 export const mockVacancies: Vacancy[] = [
     {

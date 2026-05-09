@@ -1,4 +1,3 @@
-import type { Vacancy } from "../types/vacancy";
 
 const currencyMap: Record<string, string> = {
     RUR: '₽',

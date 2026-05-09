@@ -1,6 +1,5 @@
 import { Badge, Button, Card, Flex, Group, Text } from "@mantine/core";
 import { Link } from "react-router-dom";
-import type { Vacancy } from "../types/vacancy";
 import { formatSalary } from "../utils/formatSalary";
 import { getScheduleLabel } from "../utils/getScheduleLabel";
 

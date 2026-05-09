@@ -1,4 +1,3 @@
-import type { Vacancy } from "../types/vacancy";
 
 export const getScheduleLabel = (schedule: Vacancy['schedule']) => {
     const name = schedule?.name?.toLowerCase() ?? '';
